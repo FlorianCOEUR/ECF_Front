@@ -1,0 +1,138 @@
+:root{
+    --grey: #e1e6e1;
+    --first-orange: #f85a3e;
+    --second-orange : #ff7733;
+    --third-orange: #e63b2e;
+}
+body{
+    font-family: 'Inknut Antiqua';
+    font-size: 14px;
+    background-color: var(--grey);
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.logo{
+    height: 80px;
+    width: auto;
+}
+/*Style du header*/
+header{
+    background-color: #FFFFFF;
+    border-bottom: 1px solid var(--first-orange);
+}
+.nav-link{
+    margin: 5px;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 1px solid var(--first-orange);
+}
+nav form{
+    border: 1px solid var(--first-orange);
+    width: fit-content;
+    margin: 5px;
+}
+nav form input{
+    border: none;
+}
+nav form input:focus{
+    outline: 1px solid var(--third-orange);
+}
+nav button{
+    background-color: #ffffff;
+    border:none;
+}
+
+/*Style du body*/
+.container{
+    background-color: #FFFFFF;
+    margin: auto;
+    padding: 0px;
+}
+
+.container__head{
+    background-color: var(--second-orange);
+    padding: 5px;
+}
+.content{
+    margin: 5px;
+}
+h1{
+    color: #ffffff;
+    text-align: center;
+}
+
+h2{
+    margin: 0;
+    padding: 0;
+}
+.content__head{
+    height: fit-content;
+    padding-bottom: 5px;
+    margin: 10px;
+    border-bottom:1px solid var(--second-orange) ;
+}
+span{
+    overflow: hidden; /* Cache le texte qui dépasse */
+    display: -webkit-box;
+    -webkit-line-clamp: 1; /* Nombre de lignes avant "..." */
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+}
+/*Page de recherche*/
+.breadcrum li{
+    display: inline-block;
+}
+.breadcrum a{
+    color: var(--grey);
+}
+.breadcrum li:not(:first-child)::before{
+ content:">";
+}
+main form>div{
+    display: flex;
+    flex-direction: column;
+}
+main form input, select{
+    border:1px solid var(--second-orange);
+    margin-bottom: 10px;
+}
+main form button{
+    border-radius: 20px;
+    background-color: white;
+    border: 1px solid var(--second-orange);
+    margin-bottom: 5px;
+}
+/*Style de la recette*/
+.resume{
+    text-align: center;
+    margin: 10px 0;
+}
+.card{
+    border: none;
+}
+.card img{
+    border-radius: 10px;
+    border: 1px solid var(--first-orange);
+}
+.timer{
+    text-align: center;
+}
+.timer_total{
+    border-bottom: 1px solid rgba(248, 90, 62, 0.38);
+    margin-bottom: 20px;
+}
+/*Style du footer*/
+footer .container>div{
+    margin: auto;
+    padding-top: 10px;
+    background-color: var(--second-orange);
+    color: #ffffff;
+    border-radius: 50px 50px 0 0 ;
+}
+footer p{
+    font-size: 24px;
+    text-align: center;
+}
